@@ -20,3 +20,18 @@ def list_books(request):
 
 def aboutus(request):
     return render(request, "bookmodule/aboutus.html")
+
+
+def links(request):
+    return render(request, 'bookmodule/links.html')
+
+
+def text_formatting(request):
+    return render(request, 'bookmodule/text_formatting.html')
+
+def listing(request):
+    return render(request, 'bookmodule/listing.html')
+def tables(request):
+    return render(request, 'bookmodule/tables.html')
+
+

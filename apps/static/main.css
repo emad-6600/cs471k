@@ -1,0 +1,89 @@
+
+h1{
+    color: green;
+    background-color: beige;
+}
+.ls{
+    color: rgb(0, 2, 0);
+    background-color: rgb(25, 154, 209);
+}
+.link1 {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: lightgreen;
+    color: red;
+}
+
+.link2 {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #555;
+    color: yellow;
+}
+
+.link3 {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: blue;
+}
+
+
+
+.fruit-table {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto 18px;
+}
+
+.fruit-table table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    text-align: center;
+}
+
+.camel-table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+}
+
+.camel-table caption {
+    caption-side: top;
+    margin-bottom: 2px;
+}
+
+.camel-table th,.camel-table td {
+    padding: 2px 5px;
+}
+
+.camel-table .desert-cell {
+    width: 260px;
+}
+
+.camel-table .desert-cell img {
+    display: block;
+    margin: 0 auto;
+}
+
+.camel-table .camel-title {
+    height: 105px;
+}
