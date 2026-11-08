@@ -9,5 +9,7 @@ urlpatterns = [
     path('html5/links', views.links, name='links'),
     path('html5/text/formatting',views.text_formatting,name='text_formatting'),
     path('html5/listing',views.listing,name='listing'),
-    path('html5/tables', views.tables, name='tables')
+    path('html5/tables', views.tables, name='tables'),
+    path('search',views.search,name='books.search'),
+
 ]
