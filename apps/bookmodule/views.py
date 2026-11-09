@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Book
 
 
 def index(request):
@@ -60,5 +61,25 @@ def __getBooksList():
  book3 = {'id':43211234, 'title':'The Hundred-Page Machine Learning Book', 'author':'Andriy Burkov'}
  return [book1, book2, book3]
 
+
+
+def simple_query(request):
+    mybooks = Book.objects.filter(title__icontains='python')
+    return render(request, 'bookmodule/bookList.html', {'books': mybooks})
+
+
+def complex_query(request):
+    mybooks = Book.objects.filter(
+    author__isnull=False).filter(
+    title__icontains='django').filter(edition__gte=2
+    ).exclude(
+        
+    price__lte=90
+    )[:10]
+
+    if len(mybooks) >= 1:
+        return render(request, 'bookmodule/bookList.html', {'books': mybooks})
+    else:
+        return render(request, 'bookmodule/index.html')
 
 
